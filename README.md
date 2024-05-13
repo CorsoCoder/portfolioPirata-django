@@ -1,0 +1,2 @@
+# portfolioPirata-django
+Portfolio personal.
