@@ -1,3 +1,4 @@
+![sangre](https://imgur.com/mwQtLPB.gif)
 # Portfolio Pirata [Demo](https://lacripta.pythonanywhere.com)
 
 
@@ -45,7 +46,7 @@
 | ¡Y mucho más!                   | -                                                                                                    |
 
 
-## Capturas de Pantalla
+## Capturas de Pantalla ![xd](https://imgur.com/upi0Bsq.gif)
 
 **INICIO**
 <br>
@@ -82,7 +83,11 @@ Para instalar y ejecutar localmente este proyecto, sigue estos pasos:
 5. Abre un Pull Request.
 
 ## Licencia
+Este proyecto está bajo la Licencia [CC0-1.0](https://creativecommons.org/publicdomain/zero/1.0/legalcode).
 
-Este proyecto está bajo la Licencia [MIT](https://opensource.org/licenses/MIT).
+<br>
 
+![bar](https://imgur.com/mZomlx0.gif)
+
+![xd](https://imgur.com/1WQ4p3y.gif) ![CORSO](https://imgur.com/FZlcMQ9.png)  ![xd](https://imgur.com/1WQ4p3y.gif)
 ---
