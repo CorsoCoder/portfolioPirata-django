@@ -1,0 +1,65 @@
+{% extends 'header.html' %}
+{% load static %}
+{% block title %}Detalles de la Ilustración: {{ ilustracion.titulo }}{% endblock %}
+
+{% block content %}
+<style>
+  .descimg {
+    max-width: auto;
+    height: 250px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* Estilos específicos para dispositivos móviles */
+  @media only screen and (max-width: 768px) {
+    .descimg {
+      width: 100%;
+      height: auto;
+    }
+  }
+</style>
+
+<div class="old-background"></div> <!-- Estilo de fondo de pantalla antiguo -->
+
+<div class="old-box">
+  <h1>{{ ilustracion.titulo }}</h1>
+
+  <div id="carouselExampleControls{{ forloop.counter }}" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      {% for imagen in ilustracion.imagenes.all %}
+        {% if forloop.first %}
+          <div class="carousel-item active">
+            <a href="{% url 'detalle_ilustracion' slug=ilustracion.slug %}">
+              <img src="{{ imagen.imagen.url }}" class="descimg" alt="{{ ilustracion.titulo }}">
+            </a>
+          </div>
+        {% else %}
+          <div class="carousel-item">
+            <a href="{% url 'detalle_ilustracion' slug=ilustracion.slug %}">
+              <img src="{{ imagen.imagen.url }}" class="descimg" alt="{{ ilustracion.titulo }}">
+            </a>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls{{ forloop.counter }}" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls{{ forloop.counter }}" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <p>{{ ilustracion.descripcion }}</p>
+
+  <!-- Botones para acceder al CRUD -->
+  {% if user.is_authenticated and user.is_staff %}
+    <a href="{% url 'editar_ilustracion' slug=ilustracion.slug %}" class="btn">Editar</a>
+    <a href="{% url 'eliminar_ilustracion' slug=ilustracion.slug %}" class="btn">Eliminar</a>
+  {% endif %}
+  <hr>
+  <a style="margin: 5px;"href="javascript:history.back()" class="retro-link"><img src="{% static '/img/ow/back.GIF' %}"></a>
+</div>
+{% endblock %}

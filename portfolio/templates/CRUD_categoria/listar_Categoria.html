@@ -1,0 +1,25 @@
+{% extends 'header.html' %}
+{% load static %}
+
+{% block title %}Listado de Categorías{% endblock %}
+
+{% block content %}
+<div class="old-background"></div>
+
+<div class="old-box">
+  <h1>Listado de Categorías</h1>
+  <ul>
+      <h1>zs</h1>
+    {% for cat in categoria %}
+      <li class="list-item">
+        <strong>{{ cat.nombre }}</strong>
+        {% if user.is_authenticated and user.is_staff %}
+          <a href="{% url 'editar_categoria' cat.id %}" class="edit-link">Editar</a>
+          <a href="{% url 'eliminar_categoria' cat.id %}" class="delete-link">Eliminar</a>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+  <a href="{% url 'crear_categoria' %}" class="create-link">Crear Categoría</a>
+</div>
+{% endblock %}

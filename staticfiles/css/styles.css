@@ -1,0 +1,255 @@
+/* styles.css */
+
+/* Estilo oscuro para toda la página */
+body {
+    background-color: #111;
+    color: #eee;
+}
+
+.contanierMain{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Para centrar verticalmente en la ventana del navegador */
+}
+
+.navbar{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(0, 0, 0, 0.3) !important;
+
+    background-image: url('../img/ow/bloodline.GIF');
+    background-repeat: repeat-x; 
+    /*background-size: 300px; */
+}
+.navbar img{
+    width: 30px;
+    height: auto;
+}
+/* Cambiar color del texto del navbar */
+.nav-link {
+    color: #ff0000 !important;
+    position: relative;
+    transition: color 0.3s; /* Agregamos transición para suavizar el cambio de color */
+    animation: none; /* Detenemos la animación de vibración */
+
+}
+.navbar-nav li{
+    margin: 0px 3px 0px 3px;
+}
+.nav-link img{
+    width: 50%;
+}
+
+/* Cambio de color al pasar el ratón */
+.nav-link:hover {
+    color: #00ff00 !important; /* Cambiamos el color al pasar el ratón */
+    animation: vibrate 0.3s infinite; /* Aplicamos la animación de vibración */
+
+}
+
+@keyframes vibrate {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-2px); }
+    40% { transform: translateX(2px); }
+    60% { transform: translateX(-2px); }
+    80% { transform: translateX(2px); }
+    100% { transform: translateX(0); }
+}
+
+
+
+
+/* Estilo de fondo de pantalla antiguo */
+.old-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/VIDAPIRATA.png');
+    background-size: cover;
+    filter: sepia(80%) grayscale(100%) opacity(70%);
+    z-index: -1;
+}
+
+.old-box, .second-box {
+    margin-top:10px;
+
+    background-color: rgba(0, 0, 0, 0.7);
+    color:red;
+    padding: 20px;
+    border: 2px solid black;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    margin: 0 10%; /* Margen del 10% a cada lado */
+    max-width: 80%;
+    width: auto;
+}
+
+/* Estilos para el texto dentro del recuadro */
+.old-box h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.old-box p {
+    margin: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.p1{
+    border-color:red;
+    border: 1px solid;
+}
+
+.banner {
+    /*background-color: #ff00ff;*/
+    text-align: center;
+     /* Espacio entre la cabecera y el primer cuadrado */
+     margin-bottom: 10px;
+}
+.gif {
+    width: 50%; /* Ajustar el tamaño del GIF según sea necesario */
+}
+
+
+
+
+/* Efecto de transformación al pasar el ratón */
+.transform-word:hover {
+    animation: zalgo 1s infinite; /* Animación del efecto zalgo */
+    transition: all 0.5s ease; /* Transición suave durante medio segundo */
+}
+
+/* Animación para el efecto zalgo */
+@keyframes zalgo {
+    0% { text-transform: uppercase; }
+    25% { text-transform: lowercase; }
+    50% { text-transform: uppercase; }
+    75% { text-transform: lowercase; }
+    100% { text-transform: uppercase; }
+}
+
+.puerta1{
+    max-width: 30%;
+    max-height: auto;
+}
+.puerta1:hover {
+    content: url("../img/puerta2.png");
+}
+
+
+.puertaytexto {
+    display: flex;
+}
+
+.columna-izquierda {
+    flex: 1;
+    padding-right: 20px; /* Espacio entre las columnas */
+}
+
+.columna-derecha {
+    flex: 1;
+}
+
+
+
+
+.firebar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  height: 50px;
+  background-image: url('../img/ow/firebar.gif'); /* Ruta de tu GIF de fuego */
+  background-repeat: repeat-x; /* Repetir horizontalmente */
+}
+.mephoto{
+    width: 30%;
+    max-height: auto;
+}
+
+.btn{
+    color: red !important;
+    border: 1px solid red;
+    border-radius:0 ;
+}
+.btn:hover{
+        color: #00ff00 !important; /* Cambiamos el color al pasar el ratón */
+        animation: vibrate 0.3s infinite; /* Aplicamos la animación de vibración */
+}
+
+form p{
+    margin-top: 20px !important;
+}
+form label{
+    font-size: large;
+    font-weight: bold;
+
+}
+
+input::before {
+    content: "\A"; /* Caracter de salto de línea */
+    white-space: pre; /* Indicar que el contenido debe ser mostrado como espacio en blanco preformateado */
+}
+
+input,textarea,select {
+    color:white;
+    border: 2px solid black;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    margin: 0 10px; /* Margen del 10% a cada lado */
+    width: auto;
+}
+form{
+    margin-top:10px;
+
+    background-image: url('../img/bricks.png');
+    background-repeat: repeat; 
+    color:red;
+    padding: 20px;
+    border: 1px solid rgb(255, 0, 0);
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    margin: 0 10%; /* Margen del 10% a cada lado */
+    max-width: 80%;
+    width: auto;
+}
+
+a {
+    color: inherit; /* Heredar el color del texto del elemento padre */
+    text-decoration: none; /* Eliminar subrayado */
+}
+
+.gallery-img {
+    transition: transform 0.3s; /* Agregamos una transición para suavizar la inclinación */
+    margin: auto;
+    display: block;
+}
+
+.gallery-img:hover {
+    transform: rotate(3deg); /* Inclinación al pasar el ratón */
+}
+
+.search-bar {
+    margin-bottom: 50px;
+}
+
+
+.card {
+    background-color: transparent !important;
+}
+
+button {
+    background-color: transparent !important;
+    
+}

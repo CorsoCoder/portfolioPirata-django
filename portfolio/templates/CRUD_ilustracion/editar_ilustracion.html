@@ -1,0 +1,16 @@
+{% extends 'header.html' %}
+{% block title %}Editar Ilustración{% endblock %}
+
+{% block content %}
+<div class="old-background"></div>
+
+<div class="old-box">
+    <h1>Editar Ilustración</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn">Guardar Cambios</button>
+    </form>
+    <a href="{% url 'galeria' %}" class="retro-link">Volver a la lista</a>
+</div>
+{% endblock %}

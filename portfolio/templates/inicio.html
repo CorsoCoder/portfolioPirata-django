@@ -1,0 +1,35 @@
+{% extends 'header.html' %}
+{% load static %}
+
+{% block content %}
+<div class="containerMain">
+    <div class="banner">
+        <img src="{% static '/img/banner1.gif' %}" alt="GIF" class="gif">
+    </div>
+
+    <div class="old-background"></div>
+    <!-- Recuadro centrado -->
+    <div class="old-box row">
+        <div class="col-md-6">
+            <h1>Bienvenido a la <span class="transform-word"><strong>CRIPTA PIRATA</strong></span></h1>
+            <p class="p1">
+                lugar donde se lleva un <strong>registro visual</strong> de mi descenso a la locura, espero que tu estancia aquí sea placentera. y recuerda, cuidado con las 'bananas'.
+            </p>
+
+            <p>
+                si quieres comenzar el tour por estos calabozos lo mejor será que investigues la galería, allí encontraras obras de arte de la mas repugnante calidad.
+            </p>
+
+            <p>
+                Si quieres averiguar un poco mas sobre este ser, te insto a que leas sobre <a style="color:red !important" href="{% url 'sobre_nosotros' %}" ><span class="transform-word"><strong>quienes somos</strong></span></a>.
+            </p>
+        </div>
+        <div class="col-md-6 text-center">
+            <a class="nav-link" href="{% url 'galeria' %}">
+                <img src="{% static '/img/puerta1.png' %}" alt="puerta1" class="puerta1 img-fluid" style="min-width: 50%;">
+            </a>  
+        </div>
+    </div>
+</div>
+
+{% endblock %}

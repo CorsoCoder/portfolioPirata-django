@@ -1,0 +1,16 @@
+{% extends 'header.html' %}
+{% block title %}Eliminar Ilustración{% endblock %}
+
+{% block content %}
+<div class="old-background"></div>
+
+<div class="old-box">
+    <h1>Eliminar Ilustración</h1>
+    <p>¿Estás seguro de que deseas eliminar la ilustración "{{ ilustracion.titulo }}"?</p>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit" class="btn">Eliminar</button>
+        <a href="{% url 'galeria' %}" style="color:red !important" class="retro-link">galeria</a>
+    </form>
+</div>
+{% endblock %}

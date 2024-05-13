@@ -1,0 +1,20 @@
+{% extends 'header.html' %}
+{% load static %}
+
+{% block title %}Crear Ilustración{% endblock %}
+{% block content %}
+<div class="old-background"></div>
+
+<div class="old-box">
+    <h1>Crear Ilustración</h1>
+
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <!-- Mostrar el campo de entrada de archivos para las fotos -->
+        <button type="submit" class="btn">Guardar</button>
+    </form>
+    <br>
+    <a href="{% url 'galeria' %}" class="nav-link">Volver a la galería</a> <!-- Cambio de color a verde y animación -->
+</div>
+{% endblock %}

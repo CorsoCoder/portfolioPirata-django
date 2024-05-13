@@ -1,0 +1,70 @@
+{% extends 'header.html' %}
+{% load static %}
+
+{% block title %}Ilustraciones por Categoría: {{ categoria.nombre }}{% endblock %}
+
+{% block content %}
+<style>
+    .gallery-img {
+        transition: transform 0.3s; /* Agregamos una transición para suavizar la inclinación */
+        margin: auto;
+        display: block;
+    }
+
+    .gallery-img:hover {
+        transform: rotate(3deg); /* Inclinación al pasar el ratón */
+    }
+
+    .search-bar {
+        margin-bottom: 50px;
+    }
+
+    .form {
+        background-color: wheat !important;
+    }
+
+    .card {
+        background-color: transparent !important;
+    }
+
+    button {
+        background-color: transparent !important;
+    }
+
+    .overlay-text {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding: 5px;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+</style>
+
+<div class="old-background"></div>
+
+<div class="old-box">
+    <h1>Ilustraciones por Categoría: {{ categoria.nombre }}</h1>
+
+    <div class="row">
+        {% for ilustracion in ilustraciones %}
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <div class="position-relative">
+                    <span class="overlay-text">{{ ilustracion.titulo }}</span>
+                    <a href="{% url 'detalle_ilustracion' slug=ilustracion.slug %}">
+                        <img src="{{ ilustracion.imagen.url }}" class="gallery-img card-img-top" alt="{{ ilustracion.titulo }}">
+                    </a>
+                    {% if user.is_authenticated and user.is_staff %}
+                    <a href="{% url 'editar_ilustracion' slug=ilustracion.slug %}" class="btn">Editar</a>
+                    <a href="{% url 'eliminar_ilustracion' slug=ilustracion.slug %}" class="btn">Eliminar</a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
