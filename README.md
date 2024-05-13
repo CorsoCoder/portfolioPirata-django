@@ -1,33 +1,65 @@
-# Portfolio Pirata [Demo](https://verduxo3.pythonanywhere.com)
+# Portfolio Pirata [Demo](https://lacripta.pythonanywhere.com)
 
 
-![Portfolio Pirata](https://web.archive.org/web/20071209125712/http://es.geocities.com/jonass85/calavera.gif)
+![Portfolio Pirata](https://imgur.com/uqCjLJf.gif)
+![Portfolio Pirata](https://imgur.com/MMzOKOD.gif)
+![Portfolio Pirata](https://imgur.com/uqCjLJf.gif)
+<br>
+```diff
+- Un proyecto personal desarrollado en **Django** que sirve como portfolio de mis proyectos artísticos.
++ Aquí podrás encontrar una lógica básica que te permitirá subir fotos a una página web de forma simple y altamente editable.
+! Aunque el proyecto está en una etapa inicial y está poco pulido, tengo planes continuos de actualización y mejora.
+# Espero que disfrutes explorando mi portfolio y viendo mis proyectos!
+@@ Si tienes alguna sugerencia o comentario, no dudes en ponerte en contacto conmigo. @@
+```
 
-Un proyecto personal desarrollado en Django que sirve como portfolio de mis proyectos artísticos. Aquí podrás encontrar una lógica básica que te permitirá subir fotos a una página web de forma simple y altamente editable. Aunque el proyecto está en una etapa inicial y está poco pulido, tengo planes continuos de actualización y mejora.
+<br>
 
-## Funcionalidades Actuales  ![Portfolio Pirata](https://web.archive.org/web/20090821214109/http://geocities.com/SunsetStrip/Underground/4518/pirate_flag.gif)
+## $${\color{lightgreen}Funcionalidades \space actuales }$$  
 
-- **Subida de Fotos:** Permite a los administradores cargar fotos para mostrar su trabajo.
-- **Galería de Proyectos:** Los usuarios pueden navegar y ver una galería con el contenido cargado.
-- **Administración de Contenido:** Interfaz básica para la gestión de proyectos y fotos.
+<div align="center">
+  
+ 
+<span><strong>Subida de fotos</strong></span> - Permite a los administradores cargar fotos para mostrar su trabajo.
+ 
+<span><strong>Galería de proyectos</strong></span> - Los usuarios pueden navegar y ver una galería con el contenido cargado.
+ 
+<span><strong>Administración de contenido</strong></span> - Interfaz básica para la gestión de proyectos y fotos.
 
-## Próximas Incorporaciones
+</div>
 
-- **Procesamiento de Imágenes:** Implementar una lógica para cargar miniaturas en la galería y cargar la imagen completa en la página de detalle.
-- **Apartado de Servicios:** Mostrar todos los servicios ofrecidos por el artista de manera organizada.
-- **Sección "Sobre Mí":** Completar la sección "Sobre Mí" para ofrecer una visión completa del artista.
-- **Mejoras de Responsividad:** Hacer que la página sea más receptiva y amigable para dispositivos móviles.
-- **Refactorización de Categorías:** Reorganizar las categorías principales y agregar etiquetas para mejorar la estética de la obra.
-- **Seguridad:** Implementar medidas de seguridad para proteger la página.
-- **Formulario de Contacto:** Agregar un formulario de contacto por correo electrónico para facilitar la comunicación con los usuarios.
-- **¡Y mucho más!** Estoy abierto a nuevas ideas y sugerencias para mejorar el proyecto.
+<br>
 
- ![Portfolio Pirata](https://web.archive.org/web/20090729140433/http://www.geocities.com/themexicanpirate/bar_1.gif)
+## $${\color{red}Proximas \space Incorporaciones! }$$  
+
+
+| Tarea                           | Descripción                                                                                          |
+|---------------------------------|------------------------------------------------------------------------------------------------------|
+| Procesamiento de Imágenes       | Implementar una lógica para cargar miniaturas en la galería y cargar la imagen completa en la página de detalle. |
+| Apartado de Servicios           | Mostrar todos los servicios ofrecidos por el artista de manera organizada.                           |
+| Sección "Sobre Mí"             | Completar la sección "Sobre Mí" para ofrecer una visión completa del artista.                        |
+| Mejoras de Responsividad        | Hacer que la página sea más receptiva y amigable para dispositivos móviles.                          |
+| Refactorización de Categorías  | Reorganizar las categorías principales y agregar etiquetas para mejorar la estética de la obra.     |
+| Seguridad                       | Implementar medidas de seguridad para proteger la página.                                            |
+| Formulario de Contacto          | Agregar un formulario de contacto por correo electrónico para facilitar la comunicación con los usuarios. |
+| ¡Y mucho más!                   | -                                                                                                    |
 
 
 ## Capturas de Pantalla
 
-![Ejemplo de Captura de Pantalla](https://tu-url-de-la-captura-de-pantalla.png)
+**INICIO**
+<br>
+<img src="https://imgur.com/ma87lkE.png" alt="Ejemplo de Captura de Pantalla" width="50%">
+
+**GALERÍA**
+<br>
+<img src="https://imgur.com/YJw5K42.png" alt="Ejemplo de Captura de Pantalla" width="50%">
+
+**DETALLE**
+<br>
+<img src="https://imgur.com/umYf2Pm.png" alt="Ejemplo de Captura de Pantalla" width="50%">
+
+
 
 ## Instalación
 
