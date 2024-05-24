@@ -1,11 +1,13 @@
 ![sangre](https://imgur.com/mwQtLPB.gif)
 # Portfolio Pirata [Demo](https://lacripta.pythonanywhere.com)
 
+<p align="center">
+  <img src="https://i.imgur.com/MMzOKOD.gif" alt="GIF">
+</p>
 
-![Portfolio Pirata](https://imgur.com/uqCjLJf.gif)
-![Portfolio Pirata](https://imgur.com/MMzOKOD.gif)
-![Portfolio Pirata](https://imgur.com/uqCjLJf.gif)
+
 <br>
+
 ```diff
 - Un proyecto personal desarrollado en **Django** que sirve como portfolio de mis proyectos artísticos.
 + Aquí podrás encontrar una lógica básica que te permitirá subir fotos a una página web de forma simple y altamente editable.
