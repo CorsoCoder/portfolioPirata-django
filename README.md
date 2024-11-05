@@ -92,4 +92,16 @@ Este proyecto está bajo la Licencia [CC0-1.0](https://creativecommons.org/publi
 ![bar](https://imgur.com/mZomlx0.gif)
 
 ![xd](https://imgur.com/1WQ4p3y.gif) ![CORSO](https://imgur.com/FZlcMQ9.png)  ![xd](https://imgur.com/1WQ4p3y.gif)
+
+<br>
+<br>
+
+
+<p align="center">
+    <img src="https://web.archive.org/web/20091027123841/http://www.geocities.com/ozzyslady/spinningskull.gif" width="50px">
+    <img src="https://imgur.com/Wl1nWVW.png" width="250px">
+    <img src="https://web.archive.org/web/20091027123841/http://www.geocities.com/ozzyslady/spinningskull.gif" width="50px">
+</p>
+
+
 ---
